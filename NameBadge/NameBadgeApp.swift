@@ -11,7 +11,7 @@ import SwiftUI
 struct NameBadgeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(myName: "Russell Gordon")
         }
     }
 }

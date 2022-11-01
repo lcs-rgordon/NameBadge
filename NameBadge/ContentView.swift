@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: Stored properties
+    let myName: String
+    
+    // MARK: Computed properties
+    
+    // The user interface
+    // This will be a "name badge"
     var body: some View {
-        Text("Hello, world!")
+        Text(myName)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(myName: "Mr. Gordon")
     }
 }
