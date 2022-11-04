@@ -21,11 +21,24 @@ struct ContentView: View {
     // This will be a "name badge"
     var body: some View {
         
-        VStack {
-            Text("Hi, my name is:")
-            Text(myName)
+        VStack(spacing: 0) {
+            Text("HELLO")
+                .fontWeight(.black)
+                .font(.largeTitle)
+                .frame(width: 300)
+                .padding(.top, 10)
+                .padding(.bottom, -5)
+                .foregroundColor(.white)
+            Text("my name is")
+                .foregroundColor(.white)
+            Spacer()
+                .background(Color.white)
         }
-        
+        .frame(height: 200)
+        .background {
+            RoundedRectangle(cornerRadius: 10)
+                .foregroundColor(.red)
+        }
 
     }
 }
