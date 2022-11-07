@@ -22,16 +22,18 @@ struct ContentView: View {
     var body: some View {
         
         VStack(spacing: 0) {
+            
             Text("HELLO")
                 .fontWeight(.black)
                 .font(.largeTitle)
                 .frame(width: 300)
-    
                 .padding(.bottom, -5)
                 .foregroundColor(.white)
+            
             Text("my name is")
                 .foregroundColor(.white)
                 .padding(.bottom, 10)
+            
             Text("Russ")
                 .font(Font.custom("MarkerFelt-Wide", size: 40))
                 .foregroundColor(.black)
